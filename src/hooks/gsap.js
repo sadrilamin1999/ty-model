@@ -26,7 +26,7 @@ export const useGsapShuterUnveil = (item, delay = 0, trig) => {
     );
   }, []);
 };
-export const useGsapDownStager = (arr) => {
+export const useGsapDownStager = (arr, delay = 0) => {
   useEffect(() => {
     const el = arr.map((item) => item.current);
 
@@ -41,7 +41,8 @@ export const useGsapDownStager = (arr) => {
         opacity: 1,
         duration: 1.5,
         stagger: 0.2,
-        ease: Expo.easeInOut,
+        ease: Expo.easeIn,
+        delay: delay,
       }
     );
   }, []);

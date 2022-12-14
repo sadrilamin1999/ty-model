@@ -34,7 +34,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 1px;
-  background-color: var(--color-lighter);
+  background-color: white;
   color: var(--color-darker);
 }
 .wrapper {
@@ -94,25 +94,8 @@ section {
   font-family: "Anton", sans-serif;
   letter-spacing: 0.2rem;
 }
-/* .hero {
-  text-transform: uppercase;
-  font-size: 10vw;
-  text-align: center;
-  line-height: 1.2;
-  color: var(--color-darker);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-} */
+
 .hero {
-  /* background: url(https://img.freepik.com/free-photo/magnificent-woman-long-bright-skirt-dancing-studio-carefree-inspired-female-model-posing-with-pleasure-yellow_197531-11084.jpg?w=1380&t=st=1670869692~exp=1670870292~hmac=22ae95e19a9c17be9b7f98c1365c8ae530e70e22e19eea84be05fa01eca44f4b);
-  background-size: contain;
-  background-repeat: no-repeat; 
-  filter: grayscale(0.8);
-  transition: 0.5s;*/
   text-transform: uppercase;
   font-size: 10vw;
   text-align: center;
@@ -124,15 +107,8 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
-  transition: 0.5s;
+  transition: 1.5s;
 }
-/* .hero:hover {
-  color: var(--color-lighter);
-  background: url(https://img.freepik.com/free-photo/magnificent-woman-long-bright-skirt-dancing-studio-carefree-inspired-female-model-posing-with-pleasure-yellow_197531-11084.jpg?w=1380&t=st=1670869692~exp=1670870292~hmac=22ae95e19a9c17be9b7f98c1365c8ae530e70e22e19eea84be05fa01eca44f4b);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-} */
 
 .fashion,
 .agency {
@@ -147,5 +123,206 @@ section {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-lighter);
+  background-color: white;
+}
+
+/* About start */
+.about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.about-headline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 8rem 47rem 0 0;
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  /* font-family: "Anton&display", sans-serif;
+   */
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.about-headline span {
+  color: var(--color-darker);
+  z-index: 1;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  margin-left: 10vh;
+}
+
+.about-image img {
+  height: 100%;
+  width: 100;
+  object-fit: cover;
+}
+
+.about-text {
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  margin: 10rem;
+  padding: 2rem;
+}
+
+.model h4 {
+  font-size: 5.6rem;
+  text-align: center;
+}
+.models {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 6rem;
+}
+.models {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 3rem;
+}
+.models-image {
+  width: 25%;
+  height: 80rem;
+  overflow: hidden;
+  border: 1px solid var(--color-dark);
+}
+.models-image img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  filter: saturate(0) brightness(0.5);
+  transition: 0.5s ease-in-out;
+}
+.models-image:hover img {
+  filter: saturate(1) brightness(1);
+}
+/* Contact start */
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-right {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-title {
+  font-size: 5rem;
+  /* font-family: "Anton&display", sans-serif; */
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-right p {
+  font-size: 2rem;
+  font-family: inherit;
+  line-height: 0.5;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons span {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icons span:hover {
+  background-color: var(--color-dark);
+  border-radius: 5px;
+}
+
+.contact-form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* input {
+  background: transparent;
+  height: 3rem;
+  padding: 2rem 10rem;
+  border: none;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: start;
+} */
+
+label {
+  border-bottom: 1px solid var(--color-dark);
+}
+
+input {
+  width: 80rem;
+  height: 8rem;
+  /* border-bottom: 1px solid var(--color-darker); */
+  border: transparent;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.join-btn {
+  background: none;
+  padding: 2rem 30rem;
+  margin-top: 5rem;
+  font-size: 2rem;
+  border: 1px solid var(--color-dark);
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: var(--color-darker);
+  border: 2px solid var(--color-lighter);
+  color: var(--color-light);
+}
+/* Footer start */
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-darker);
+}
+
+.footer h2 {
+  color: var(--color-light);
+  font-size: 10vh;
+  text-transform: lowercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.footer p {
+  color: var(--color-light);
+  font-size: 1.6rem;
 }

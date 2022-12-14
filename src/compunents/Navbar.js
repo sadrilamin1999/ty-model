@@ -9,8 +9,10 @@ const Navbar = () => {
   const logoRef = useRef(null);
 
   const liArry = [li1, li2, li3];
+  const logoArr = [logoRef];
 
-  useGsapDownStager(liArry);
+  useGsapDownStager(liArry, 0.8);
+  useGsapDownStager(logoArr, 0.6);
   return (
     <nav className="navbar wrapper">
       <div className="logo" ref={logoRef}>
